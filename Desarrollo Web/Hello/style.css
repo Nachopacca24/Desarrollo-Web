@@ -131,3 +131,22 @@ img {
     justify-content: space-around;
   }
 }
+
+/* 🖥️ Desktop */
+@media (min-width: 1025px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres columnas */
+    gap: 20px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto; /* centrar contenido en pantallas grandes */
+  }
+}
