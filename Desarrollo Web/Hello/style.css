@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;  /* fondo suave gris-azulado */
+  color: #2c3e50;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Encabezados */
+h1 {
+  text-align: center;
+  color: #1e3d59;   /* azul oscuro elegante */
+  background-color: #ffcc00; /* amarillo suave */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #162447;
+  margin-top: 10px;
+}
+
+h3 {
+  color: #e43f5a;  /* rojo oscuro */
+  border-bottom: 2px solid #e43f5a;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Enlaces */
+a {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00b4d8;
+  text-decoration: underline;
+}
+/* Listas */
+ul {
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+/* Tablas */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #162447;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3d59; /* azul oscuro */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Flexbox aplicado en nav */
+nav {
+  display: flex;
+  justify-content: center; /* centra los enlaces */
+  gap: 20px; /* espacio entre enlaces */
+  margin: 20px 0;
+}
+
+/* Grid aplicado en main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  gap: 20px;
+}
+
+
+/* 🎯 Mobile (por defecto) */
+body {
+  padding: 10px;
+}
+
+main {
+  display: block; /* secciones en una sola columna */
+}
+
+img {
+  max-width: 100%; /* imágenes no se salen de pantalla */
+  height: auto;
+}
+
+/* 📱 Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas */
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+}
+
+/* 🖥️ Desktop */
+@media (min-width: 1025px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* tres columnas */
+    gap: 20px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  body {
+    max-width: 1200px;
+    margin: auto; /* centrar contenido en pantallas grandes */
+  }
+}
