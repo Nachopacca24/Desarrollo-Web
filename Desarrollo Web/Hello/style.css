@@ -49,3 +49,42 @@ a:hover {
   color: #00b4d8;
   text-decoration: underline;
 }
+/* Listas */
+ul {
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+/* Tablas */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #162447;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #1e3d59; /* azul oscuro */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
