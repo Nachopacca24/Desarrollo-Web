@@ -118,3 +118,16 @@ img {
   max-width: 100%; /* imágenes no se salen de pantalla */
   height: auto;
 }
+
+/* 📱 Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas */
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+}
