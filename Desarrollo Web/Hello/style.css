@@ -103,3 +103,18 @@ main {
   grid-template-columns: 1fr 1fr; /* dos columnas iguales */
   gap: 20px;
 }
+
+
+/* 🎯 Mobile (por defecto) */
+body {
+  padding: 10px;
+}
+
+main {
+  display: block; /* secciones en una sola columna */
+}
+
+img {
+  max-width: 100%; /* imágenes no se salen de pantalla */
+  height: auto;
+}
