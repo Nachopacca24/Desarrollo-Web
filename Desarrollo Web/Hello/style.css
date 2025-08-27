@@ -96,3 +96,10 @@ nav {
   gap: 20px; /* espacio entre enlaces */
   margin: 20px 0;
 }
+
+/* Grid aplicado en main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dos columnas iguales */
+  gap: 20px;
+}
