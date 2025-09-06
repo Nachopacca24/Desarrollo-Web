@@ -3,21 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web development</title>
+  <title>Mi CV</title>
   
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <!-- CSS personalizado -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Ajuste para que las secciones ancla no queden tapadas por la navbar */
+    .section-anchor {
+      padding-top: 70px;   /* altura de la navbar */
+      margin-top: -70px;
+    }
+  </style>
 </head>
 <body class="bg-light">
+
+  <!-- Navbar fija compacta -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom py-1 sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-6" href="#">Mi CV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link fs-6" href="#educacion">Educación</a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link fs-6" href="#tecnologias">Tecnologías</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="container py-5">
     <h1 class="text-center mb-3">Bienvenidos a mi CV</h1>
     <h2 class="text-center mb-4">Mi nombre es Jose Ignacio Paccagnella</h2>
 
-    <!-- Foto personal circular con borde -->
+    <!-- Foto circular -->
     <div class="text-center mb-4">
       <img src="foto.jpg" 
            alt="Foto de Jose Ignacio Paccagnella" 
@@ -43,7 +68,7 @@
       </a>
     </p>
 
-    <!-- Lenguajes de programación con badges -->
+    <!-- Lenguajes de programación -->
     <h3 class="mt-4">Lenguajes de programación usados</h3>
     <div class="mb-3">
       <span class="badge bg-primary me-1">HTML</span>
@@ -53,7 +78,7 @@
       <span class="badge bg-danger me-1">C++</span>
     </div>
 
-    <!-- Soft Skills con badges -->
+    <!-- Soft Skills -->
     <h3>Soft Skills</h3>
     <div class="mb-3">
       <span class="badge bg-secondary me-1">Trabajo en equipo</span>
@@ -68,8 +93,8 @@
       <span class="badge bg-secondary me-1">Toma de decisiones</span>
     </div>
 
-    <!-- Tecnologías con badges -->
-    <h3>Tecnologías</h3>
+    <!-- Tecnologías -->
+    <h3 id="tecnologias" class="section-anchor">Tecnologías</h3>
     <div class="mb-3">
       <span class="badge bg-dark me-1">Arduino IDE</span>
       <span class="badge bg-dark me-1">Docker</span>
@@ -78,7 +103,7 @@
     </div>
 
     <!-- Educación -->
-    <h3 class="mt-4" id="educacion">Educación</h3>
+    <h3 id="educacion" class="mt-4 section-anchor">Educación</h3>
     <table class="table table-bordered table-striped">
       <caption>Tabla de estudios realizados con institución y título</caption>
       <thead class="table-dark">
@@ -103,7 +128,7 @@
     </table>
 
     <!-- Experiencia Laboral -->
-    <h3 class="mt-4" id="experiencia">Experiencia Laboral</h3>
+    <h3 id="experiencia" class="mt-4 section-anchor">Experiencia Laboral</h3>
     <table class="table table-bordered table-striped">
       <caption>Tabla de experiencia profesional con empresas y puestos</caption>
       <thead class="table-dark">
