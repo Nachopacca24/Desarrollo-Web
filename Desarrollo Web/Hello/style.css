@@ -144,3 +144,22 @@ main {
     padding: 0 20px; /* padding horizontal controlado */
   }
 }
+
+.fuego-pixelado {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;                /* más alto para que el fuego sea más grande */
+  pointer-events: none;
+  z-index: -1;
+
+  background-image: url('Fuego.gif'); /* tu GIF */
+  background-repeat: repeat-x;        /* se repite horizontalmente */
+  background-size: 200%;         /* mantiene proporción, altura completa */
+  background-position: bottom left;   /* pegado al fondo */
+}
+
+
+
+
