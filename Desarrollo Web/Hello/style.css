@@ -2,7 +2,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #000;  /* fondo suave gris-azulado */
-  color: #2c3e50;
+  color: #0077b6;
   margin: 0;           /* eliminar margen por defecto */
   padding: 0 10px;     /* padding horizontal controlado */
   line-height: 1.6;
@@ -11,7 +11,7 @@ body {
 /* Encabezados */
 h1 {
   text-align: center;
-  color: #e43f5a;   /* azul oscuro elegante */
+  color: #ffcc00;   /* azul oscuro elegante */
   background-color: #000; /* amarillo suave */
   padding: 15px;
   border-radius: 10px;
@@ -19,12 +19,12 @@ h1 {
 
 h2 {
   text-align: center;
-  color: #e43f5a;
+  color: #ffcc00;
   margin-top: 10px;
 }
 
 h3 {
-  color: #e43f5a;  /* rojo oscuro */
+  color: #ffcc00;  /* rojo oscuro */
   border-bottom: 2px solid #e43f5a;
   padding-bottom: 5px;
   margin-top: 20px;
@@ -176,3 +176,48 @@ main {
       background-size: auto 100%;        /* mantiene proporción del GIF */
       background-position: bottom left;  /* pegado abajo */
     }
+
+    /* Ajuste para que las secciones ancla no queden tapadas por la navbar */
+    .section-anchor {
+      padding-top: 70px;
+      margin-top: -70px;
+    }
+
+    /* Soft skills y llaves doom */
+    .keys-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.key {
+  width: 40px;            /* tamaño de la llave */
+  cursor: grab;           /* cursor de "puedes agarrar" */
+  user-select: none;      /* evita seleccionar la imagen */
+  position: absolute;     /* necesario para moverlas */
+}
+
+
+
+.key:active {
+  cursor: grabbing;
+}
+
+
+.softskills-container {
+  min-height: 120px;
+  background-color: #000;
+  border-radius: 8px;
+  border: 3px solid #e43f5a;  /* ⚡ esto dibuja el borde */
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
