@@ -94,3 +94,24 @@ keys.forEach(key => {
   // Evita el comportamiento predeterminado de arrastrar imagen
   key.ondragstart = () => false;
 });
+
+
+
+// Botón Doom
+const switchEl = document.getElementById("doomSwitch");
+const tabla = document.getElementById("tablaExperiencia"); // 👈 agrega id="tablaExperiencia" a tu <table>
+
+// Imágenes
+const imgOff = "Doom_switch_off.png";  
+const imgOn = "Doom_switch_on.png";    
+
+let isOn = false;
+
+switchEl.addEventListener("click", () => {
+  isOn = !isOn;
+  switchEl.src = isOn ? imgOn : imgOff;
+
+  // Mostrar/ocultar tabla
+  tabla.style.display = isOn ? "table" : "none";
+});
+

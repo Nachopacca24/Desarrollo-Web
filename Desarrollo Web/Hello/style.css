@@ -30,6 +30,15 @@ h3 {
   margin-top: 20px;
 }
 
+h4 {
+  color:#e43f5a;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 20px;
+
+
+}
+
 /* Imágenes */
 img {
   display: block;
@@ -218,6 +227,14 @@ main {
   justify-content: center;
 }
 
+.doom-switch {
+  width: 60px;
+  cursor: pointer;
+  
+}
 
 
+#tablaExperiencia {
+  display: none;
+}
 
